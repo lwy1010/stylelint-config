@@ -9,10 +9,10 @@ module.exports = {
     'block-no-empty': true,
     // selectors must be written in lowercase and match the regex
     'selector-class-pattern': [
-      '^[a-z0-9\\-]+$',
+      '^[a-z0-9\\-]+$|^el-|^van-',
       {
-        message: 'Selector should be written in lowercase with hyphens (selector-class-pattern)'
-      }
+        message: 'Selector should be written in lowercase with hyphens (selector-class-pattern)',
+      },
     ],
     // disallow units for zero lengths.
     'length-zero-no-unit': true,
@@ -20,8 +20,8 @@ module.exports = {
     'selector-pseudo-element-no-unknown': [
       true,
       {
-        ignorePseudoElements: ['v-deep']
-      }
+        ignorePseudoElements: ['v-deep'],
+      },
     ],
     // allow keywords of Sass syntax
     'at-rule-no-unknown': [
@@ -47,9 +47,9 @@ module.exports = {
           'return',
           'use',
           'warn',
-          'while'
-        ]
-      }
-    ]
-  }
+          'while',
+        ],
+      },
+    ],
+  },
 };

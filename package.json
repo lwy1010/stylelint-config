@@ -1,8 +1,11 @@
 {
   "name": "@7inch/stylelint-config",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "main": "index.js",
   "author": "lwy1010",
+  "scripts": {
+    "release": "npm publish --access public"
+  },
   "peerDependencies": {
     "stylelint": "^13.9.0"
   },
@@ -14,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/7inch/stylelint-config.git"
   },
-  "homepage": "https://github.com/7inch/stylelint-config/README.md",
+  "homepage": "https://github.com/7inch/stylelint-config/blob/main/README.md",
   "bugs": {
     "url": "https://github.com/7inch/stylelint-config/issues"
   },
@@ -22,5 +25,10 @@
     "stylelint",
     "stylelint-config"
   ],
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 100,
+    "tabWidth": 2
+  },
   "license": "MIT"
 }
