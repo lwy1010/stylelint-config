@@ -4,9 +4,11 @@
   "main": "index.js",
   "author": "lwy1010",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "release": "npm publish --access public"
   },
   "peerDependencies": {
+    "prettier": "^2.3.2",
     "stylelint": "^13.9.0"
   },
   "dependencies": {
@@ -15,11 +17,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/7inch/stylelint-config.git"
+    "url": "git+https://github.com/lwy1010/stylelint-config.git"
   },
-  "homepage": "https://github.com/7inch/stylelint-config/blob/main/README.md",
+  "homepage": "https://github.com/lwy1010/stylelint-config/blob/main/README.md",
   "bugs": {
-    "url": "https://github.com/7inch/stylelint-config/issues"
+    "url": "https://github.com/lwy1010/stylelint-config/issues"
   },
   "keywords": [
     "stylelint",

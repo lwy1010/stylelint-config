@@ -7,10 +7,7 @@ A friendly stylelint config preset.
 ## Install
 
 ```sh
-npm i stylelint @7inch/stylelint-config -D
-
-# or with yarn
-yarn add stylelint @7inch/stylelint-config --D
+npm i stylelint prettier @7inch/stylelint-config -D
 ```
 
 ## Usage
@@ -19,7 +16,7 @@ create a .stylelintrc.js configuration file in the root of your project:
 
 ```js
 module.exports = {
-  extends: ["@7inch/stylelint-config"],
+  extends: ['@7inch/stylelint-config'],
 };
 ```
 
