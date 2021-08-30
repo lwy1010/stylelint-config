@@ -1,11 +1,11 @@
 {
   "name": "@7inch/stylelint-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "author": "lwy1010",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "release": "npm publish --access public"
+    "release": "npx bumpp --commit --tag --push && npm publish --access public"
   },
   "peerDependencies": {
     "prettier": "^2.3.2",
