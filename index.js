@@ -23,7 +23,7 @@ module.exports = {
         ignorePseudoElements: ['v-deep'],
       },
     ],
-    // allow keywords of Sass syntax
+    // allow rules of Sass/tailwind/windicss
     'at-rule-no-unknown': [
       true,
       {
@@ -48,6 +48,13 @@ module.exports = {
           'use',
           'warn',
           'while',
+          // tailwind/windicss directives
+          'tailwind',
+          'apply',
+          'layer',
+          'variants',
+          'responsive',
+          'screen',
         ],
       },
     ],
