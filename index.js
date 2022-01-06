@@ -1,13 +1,12 @@
 module.exports = {
   extends: ['stylelint-config-recommended', 'stylelint-config-prettier'],
 
-  // add rule here with comments.
   rules: {
     // limit the allowed nesting depth to 3
     'max-nesting-depth': 3,
     // disallow empty blocks.
     'block-no-empty': true,
-    // selectors must be written in lowercase and match the regex
+    // selectors must be written in lowercase and match the regex(exclude element UI and Vant UI)
     'selector-class-pattern': [
       '^[a-z0-9\\-]+$|^el-|^van-',
       {

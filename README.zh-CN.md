@@ -2,19 +2,19 @@
 
 [English](README.md) | [中文](README.zh-CN.md)
 
-## Introduction
+## 介绍
 
-A friendly stylelint config preset, it works well with scss / tailwind / windicss.
+一份简单实用的 stylelint 配置，适用于 scss/tailwind/windicss 。
 
-## Install
+## 安装
 
 ```sh
 npm i stylelint prettier @7inch/stylelint-config -D
 ```
 
-## Usage
+## 用法
 
-create a .stylelintrc.js configuration file in the root of your project:
+在项目的根目录下创建一个.stylelintrc.js 配置文件：
 
 ```js
 module.exports = {
@@ -22,7 +22,7 @@ module.exports = {
 };
 ```
 
-then install **stylelint** and **prettier** plugin for your vscode, and setup following config:
+同时，给 VSCode 装上 stylelint 和 prettier 插件，并在设置中加入以下的配置：
 
 ```js
 {
@@ -34,4 +34,4 @@ then install **stylelint** and **prettier** plugin for your vscode, and setup fo
 }
 ```
 
-checkout [Configuration](https://stylelint.io/user-guide/configure) to get more details.
+更多关于 stylelint 的配置请移步 [stylelint 文档](https://stylelint.io/user-guide/configure)。
