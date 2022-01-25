@@ -8,11 +8,11 @@
   },
   "peerDependencies": {
     "prettier": "^2.5.1",
-    "stylelint": "^14.3.0"
+    "stylelint": "^13.9.0"
   },
   "dependencies": {
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-recommended": "^6.0.0"
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recommended": "^4.0.0"
   },
   "repository": {
     "type": "git",
