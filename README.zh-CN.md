@@ -1,10 +1,12 @@
 # @7inch/stylelint-config
 
+[![npm](https://img.shields.io/npm/v/@7inch/stylelint-config)](https://npmjs.com/package/@7inch/stylelint-config)
+
 [English](README.md) | [中文](README.zh-CN.md)
 
 ## 介绍
 
-一份简单实用的 stylelint 配置，适用于 scss/tailwind/windicss 。
+我的 stylelint 配置，它是友好的，适用于 scss / tailwind / windicss / element plus/ vant。
 
 ## 安装
 
@@ -14,15 +16,34 @@ npm i stylelint prettier @7inch/stylelint-config -D
 
 ## 用法
 
-在项目的根目录下创建一个.stylelintrc.js 配置文件：
+### 配置 `.stylelintrc.js`
 
 ```js
 module.exports = {
-  extends: ['@7inch/stylelint-config'],
+  extends: ["@7inch/stylelint-config"],
 };
 ```
 
-同时，给 VSCode 装上 stylelint 和 prettier 插件，并在设置中加入以下的配置：
+### 配置 `.stylelintignore`
+
+```txt
+dist
+public
+```
+
+### 在`package.json`中添加 stylelint 脚本
+
+```json
+{
+  "scripts": {
+    "stylelint": "stylelint \"**/*.{vue,css,scss}\" --fix"
+  }
+}
+```
+
+### 配置 VSCode 代码自动修复
+
+创建 `.vscode/settings.json`
 
 ```js
 {
@@ -30,8 +51,8 @@ module.exports = {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
     "source.fixAll.stylelint": true
-  },
+  }
 }
 ```
 
-更多关于 stylelint 的配置请移步 [stylelint 文档](https://stylelint.io/user-guide/configure)。
+更多使用详情请移步 [stylelint 文档](https://stylelint.io/user-guide/configure) 。

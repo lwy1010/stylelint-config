@@ -1,10 +1,12 @@
 # @7inch/stylelint-config
 
+[![npm](https://img.shields.io/npm/v/@7inch/stylelint-config)](https://npmjs.com/package/@7inch/stylelint-config)
+
 [English](README.md) | [中文](README.zh-CN.md)
 
 ## Introduction
 
-A friendly stylelint config preset, it works well with scss / tailwind / windicss.
+My stylelint config, it's friendly and works well with scss / tailwind / windicss / element plus/ vant.
 
 ## Install
 
@@ -14,15 +16,34 @@ npm i stylelint prettier @7inch/stylelint-config -D
 
 ## Usage
 
-create a .stylelintrc.js configuration file in the root of your project:
+### Config `.stylelintrc.js`
 
 ```js
 module.exports = {
-  extends: ['@7inch/stylelint-config'],
+  extends: ["@7inch/stylelint-config"],
 };
 ```
 
-then install **stylelint** and **prettier** plugin for your vscode, and setup following config:
+### Config `.stylelintignore`
+
+```txt
+dist
+public
+```
+
+### Add script for package.json
+
+```json
+{
+  "scripts": {
+    "stylelint": "stylelint \"**/*.{vue,css,scss}\" --fix"
+  }
+}
+```
+
+### Config VSCode auto fix
+
+Create `.vscode/settings.json`
 
 ```js
 {
@@ -30,8 +51,8 @@ then install **stylelint** and **prettier** plugin for your vscode, and setup fo
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
     "source.fixAll.stylelint": true
-  },
+  }
 }
 ```
 
-checkout [Configuration](https://stylelint.io/user-guide/configure) to get more details.
+Checkout [stylelint](https://stylelint.io/user-guide/configure) for more usage details.
