@@ -56,3 +56,7 @@ public
 ```
 
 更多使用详情请移步 [stylelint 文档](https://stylelint.io/user-guide/configure) 。
+
+# License
+
+Made with ❤️ Published under [MIT License](./LICENSE).

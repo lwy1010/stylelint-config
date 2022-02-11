@@ -56,3 +56,7 @@ Create `.vscode/settings.json`
 ```
 
 Checkout [stylelint](https://stylelint.io/user-guide/configure) for more usage details.
+
+# License
+
+Made with ❤️ Published under [MIT License](./LICENSE).
