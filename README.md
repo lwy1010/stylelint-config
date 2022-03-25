@@ -6,7 +6,7 @@
 
 ## Introduction
 
-My stylelint config, it's friendly and works well with scss / tailwind / windicss / element plus/ vant.
+My stylelint config, it's friendly and works well with scss / tailwind / windicss / element plus/ vant / wechat miniprogram.
 
 ## Install
 

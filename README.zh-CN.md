@@ -6,7 +6,7 @@
 
 ## 介绍
 
-我的 stylelint 配置，它是友好的，适用于 scss / tailwind / windicss / element plus/ vant。
+我的 stylelint 配置，规则友好的，适用于 scss / tailwind / windicss / element plus/ vant / wechat 小程序(rpx)。
 
 ## 安装
 

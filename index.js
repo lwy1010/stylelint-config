@@ -15,6 +15,13 @@ module.exports = {
     ],
     // disallow units for zero lengths.
     "length-zero-no-unit": true,
+    // allow rpx unit(for wechat miniprogram)
+    "unit-no-unknown": [
+      true,
+      {
+        ignoreUnits: ["rpx"],
+      },
+    ],
     // allow 'v-deep' deep selector(for Sass)
     "selector-pseudo-element-no-unknown": [
       true,
